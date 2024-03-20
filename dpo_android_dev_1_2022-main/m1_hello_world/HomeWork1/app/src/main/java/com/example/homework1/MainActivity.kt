@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityMainBinding.inflate(layoutInflater) //добавили
         setContentView(binding.root)
-        binding.reduceView.isEnabled = false //состояние пустого
+        binding.reduceView.isEnabled = false//состояние пустого
 
         binding.reduceView.setOnClickListener {
             binding.helloView.setTextColor(Color.BLUE)
@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
             binding.helloView.text = getString(R.string.empty)
             binding.counterView.text = cnt.toString()
             binding.reduceView.isEnabled = false
+            binding.addView.isEnabled = true
         }
     }
 }
