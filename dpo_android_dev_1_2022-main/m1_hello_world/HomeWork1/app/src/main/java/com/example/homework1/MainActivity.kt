@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val binding = ActivityMainBinding.inflate(layoutInflater) //добавили
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.reduceView.isEnabled = false//состояние пустого
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             cntPlaces++
             binding.helloView.text = getString(R.string.noEmpty) + " " + cntPlaces
             if (cnt <= 0) {
-                binding.reduceView.isEnabled = false  //состояние пустого
+                binding.reduceView.isEnabled = false
                 binding.helloView.setTextColor(Color.GREEN)
                 binding.helloView.text = getString(R.string.empty)
             } else binding.reduceView.isEnabled = true
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             binding.counterView.text = cnt.toString()
             cntPlaces--
             binding.helloView.text = getString(R.string.noEmpty) + " " + cntPlaces
-            if (cntPlaces <= 0) {   //fullCounter
+            if (cntPlaces <= 0) {
                 binding.helloView.text = getString(R.string.full)
                 binding.helloView.setTextColor(Color.RED)
                 binding.restartView.visibility = View.VISIBLE
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.restartView.setOnClickListener{
-            cnt = 0  //emptyCounter
+            cnt = 0
             cntPlaces = COUNT_PASSENGER
             binding.helloView.setTextColor(Color.GREEN)
             binding.restartView.visibility = View.INVISIBLE
