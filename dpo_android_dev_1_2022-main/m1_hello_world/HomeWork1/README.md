@@ -14,9 +14,9 @@
 
 • При количестве пассажиров 50 и выше текст красный, появляется кнопка «Сброс».
 
-<img src="img/photo_2024-03-20_10-35-53.jpg" width="300" alt="img">
-![img alt](img/photo_2024-03-20_10-15-05.jpg)
-![img alt](img/photo_2024-03-20_10-15-07.jpg)
+<img src="img/photo_2024-03-20_10-35-53.jpg" width="200" alt="img">
+<img src="img/photo_2024-03-20_10-15-05.jpg" width="200" alt="img">
+<img src="img/photo_2024-03-20_10-15-07.jpg" width="200" alt="img">
 
 ## Советы и рекомендации:
 
