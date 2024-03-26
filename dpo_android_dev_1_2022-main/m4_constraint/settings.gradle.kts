@@ -12,6 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Constraint"
-include ':app'
-include ':app'
+
+rootProject.name = "Home Work 3"
